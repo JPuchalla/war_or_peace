@@ -9,7 +9,6 @@ class Deck
 
   def rank_of_card_at(position)
     @stack[position].rank
-    require "pry"; binding.pry
   end
 
 end

@@ -1,12 +1,5 @@
 
 
-
-deck.rank_of_card_at(0)
-#=> 12
-
-deck.rank_of_card_at(2)
-#=> 14
-
 deck.cards
 #=> [#<Card:0x007fbfd18490e8...>, #<Card:0x007fbfd19f4fa0...>, #<Card:0x007fbfd18555a0...>]
 
