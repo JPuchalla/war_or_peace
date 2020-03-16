@@ -24,5 +24,8 @@ class Deck
     @stack.shift
   end
 
+  def add_card(card)
+    @stack.push(card)
+  end
 
 end
