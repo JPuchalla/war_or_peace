@@ -18,5 +18,7 @@ class PlayerTest < Minitest::Test
     assert_instance_of Player, @player
   end
 
-
+  def test_it_can_retrieve_players_name
+    assert_equal "Clarisa", @player.name
+  end
 end
