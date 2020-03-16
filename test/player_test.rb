@@ -21,4 +21,9 @@ class PlayerTest < Minitest::Test
   def test_it_can_retrieve_players_name
     assert_equal "Clarisa", @player.name
   end
+
+  def test_it_can_show_players_deck
+    assert_equal @deck, @player.deck
+
+  end
 end
