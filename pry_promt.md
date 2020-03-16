@@ -1,11 +1,5 @@
 
 
-deck.cards
-#=> [#<Card:0x007fbfd18490e8...>, #<Card:0x007fbfd19f4fa0...>, #<Card:0x007fbfd18555a0...>]
-
-deck.high_ranking_cards
-#=> [#<Card:0x007fbfd18490e8...>, #<Card:0x007fbfd18555a0...>]
-
 deck.percent_high_ranking
 #=> 66.67
 
