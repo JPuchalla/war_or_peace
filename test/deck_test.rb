@@ -54,6 +54,4 @@ class DeckTest < Minitest::Test
     assert_equal 33.33, @deck.percent_high_ranking
   end
 
-
-
 end
