@@ -24,6 +24,11 @@ class PlayerTest < Minitest::Test
 
   def test_it_can_show_players_deck
     assert_equal @deck, @player.deck
-
   end
+
+  def test_if_it_shows_whether_player_has_lost
+    assert_equal false, @player.has_lost?
+  end
+
+  
 end
