@@ -1,7 +1,5 @@
 
 
-pry(main)> player.name
-#=> "Clarisa"
 
 pry(main)> player.deck
 #=> #<Deck:0x007f9cc396bdf8 @cards=[#<Card:0x007f9cc3a73a98...>, #<Card:0x007f9cc3a03720...>, #<Card:0x007f9cc3a44c98...>]>
