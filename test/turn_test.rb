@@ -18,6 +18,7 @@ class TurnTest < Minitest::Test
 
     @deck1 = Deck.new([@card1, @card2, @card5, @card8])
     @deck2 = Deck.new([@card3, @card4, @card6, @card7])
+
     @player1 = Player.new("Megan", @deck1)
     @player2 = Player.new("Aurora", @deck2)
     @turn = Turn.new(@player1, @player2)
@@ -35,4 +36,27 @@ class TurnTest < Minitest::Test
   def test_if_spoils_of_war_holds_anything
     assert_equal [], @turn.spoils_of_war
   end
+
+  def test_player1_and_player2_deck
+    assert_equal @deck1, @player1.deck
+    assert_equal @deck2, @player2.deck
+  end
+
+  def test_if_basic_is_turn_type
+    assert_equal :basic, @turn.type
+  end
+
+  def test_it_can_calculate_winner
+    assert_equal @player1, @turn.winner
+  end
+
+  def test_if_it_can_pile_cards
+    assert_equal true, @turn.player1.deck.cards[1].rank == @turn.player2.deck.cards[1].rank
+     assert_equal false, @turn.player1.deck.cards[0].rank == @turn.player2.deck.cards[0].rank
+     assert_equal true, @turn.player1.deck.rank_of_card_at(1) == @turn.player2.deck.rank_of_card_at(1)
+     assert_equal false, @turn.player1.deck.rank_of_card_at(0) == @turn.player2.deck.rank_of_card_at(0)
+
+  end
+
+
 end

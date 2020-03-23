@@ -6,10 +6,6 @@ class Player
   end
 
   def has_lost?
-    if @deck.stack.length == 0
-      true
-    else
-      false
-    end
+    @deck.stack.length == 0
   end
 end
